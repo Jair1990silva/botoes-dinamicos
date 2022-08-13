@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css projeto.css">
+    <title>jair caetano</title>
+</head>
+
+<body>
+    <h3 id="data-hora"></h3>
+    <script>
+        const zeroFill = n => {
+            return ('0' + n).slice(-2);
+        }
+
+        const interval = setInterval(() => {
+            const now = new Date();
+            const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getUTCFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+            document.getElementById('data-hora').innerHTML = dataHora;
+        }, 1000);
+    </script>
+</body>
+<a class="bt bt-ou" href="https://github.com/Jair1990silva">github</a>
+<a class="bt bt-vd" href="https://br.linkedin.com/in/jair-caetano-397380231">Linkedin</a>
+<input class="bt bt-lj" type="submit"></a>
+<a class="bt bt-vm" href="https://wa.me/qr/EHMFSMBMSDLSJ1">Whatsapp</a>
+</header>
+</body>
+
+</html>
